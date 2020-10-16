@@ -3,3 +3,22 @@
 */
 @charset "UTF-8";
 
+body.principal{
+    background-color: #003399;
+}
+
+body.corpo{
+    background-color: #ffffff;
+}
+
+main{
+    background-color: #ffffff;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
