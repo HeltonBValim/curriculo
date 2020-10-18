@@ -3,6 +3,11 @@
 */
 @charset "UTF-8";
 
+/*
+tag.nomeclasse{}
+tag#Nomeid{}
+*/
+
 body.principal{
     background-color: #003399;
 }
