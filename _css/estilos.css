@@ -3,27 +3,25 @@
 */
 @charset "UTF-8";
 
-/*
-tag.nomeclasse{}
-tag#Nomeid{}
-*/
 /*Formatações gerais*/
 body.principal{
-    background-color: #003399;
+    background-color: black;
 }
 body.corpo{
     background-color: #ffffff;
+}
+hgroup#titulo {
+    height: 120px;
+    text-align: center;
 }
 main{
     background-color: #ffffff;
     width: 80vw;
     margin: auto;
-    box-shadow: 1px 1px 5px #ffff00;
+    box-shadow: 3px 3px 6px #ffff00;
     padding: 30px;
 }
-h1, h2, h3{
-    text-align: center;
-}
+
 p{
     text-align: justify;
     text-indent: 50px;
@@ -32,8 +30,16 @@ ul {
     list-style-type: circle;
 }
 /*Formatação do Menu*/
+hr {
+    height: 3px;
+}
+header#cabecalho {
+    margin: 0px;
+    padding: 0px;
+}
 nav#menu {
     display: block;
+    text-align: center;
 }
 nav#menu h6 {
     display: none;
@@ -41,15 +47,18 @@ nav#menu h6 {
 nav#menu ul {
     position: relative;
     bottom: 4px;
-    text-align: center;
     list-style: none;
     text-transform: uppercase;
 }
 nav#menu li {
     display: inline-block;
     font-size: 16px;
-    padding: 4px;
-    margin: 5px;
+    font-weight: bolder;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-right: 5px;
     transition: background-color 0.5s;
 }
 nav#menu li:hover {
@@ -62,4 +71,11 @@ nav#menu a {
 nav#menu a:hover {
     color: rgba(255,255,255,1);
     text-decoration: underline;
+}
+section#partes {
+    padding: 20px;
+}
+footer#rodape {
+    text-align: center;
+    padding-top: 10px;
 }
