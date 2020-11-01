@@ -3,18 +3,42 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        Os estilos foram adicionados às páginas, pois a hospedagem no GitHub pages
+        está acusando erro 404, mesmo com o arquivo presente/comitado no repositório.
         <link rel="stylesheet" href="_css/estilos.css" type="text/css"/>
+        -->
+        <script type="text/javascript">
+            window.onload = function () {
+                parent.document.getElementById("cPartes").height = document.getElementById("cCorpo").scrollHeight + 25;
+            }
+        </script>
         <title>Meu currículo</title>
+        <style>
+            body.corpo{
+                background-color: #ffffff;
+            }
+            p{
+                text-align: justify;
+                text-indent: 50px;
+            }
+            ul.nivel1 {
+                list-style-type: circle;
+            }
+            ul {
+                list-style-type: disc;
+            }
+        </style>
     </head>
-    <body class="corpo">
+    <body class="corpo" id="cCorpo">
         <!--
             @Autor : HeltonBValim
-            Perfil profissional
+            Página Perfil profissional
         -->
         <main>
             <h3>Perfil Profissional</h3>
-            <p>Responsável, paciente e atento a detalhes. Fácil adaptação à  mudanças.<br/>
-            Bom relacionamento interpessoal, apto para trabalhar em equipe e com atendimento ao público.</p>
+            <p>Responsável, paciente e atento a detalhes. Fácil adaptação à mudanças.</p>
+            <p>Bom relacionamento interpessoal, apto para trabalhar em equipe e com atendimento ao público.</p><br/>
         </main>
     </body>
 </html>

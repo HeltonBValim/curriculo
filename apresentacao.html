@@ -3,22 +3,50 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        Os estilos foram adicionados às páginas, pois a hospedagem no GitHub pages
+        está acusando erro 404, mesmo com o arquivo presente/comitado no repositório.
         <link rel="stylesheet" href="_css/estilos.css" type="text/css"/>
+        -->
+        <script type="text/javascript">
+            window.onload = function () {
+                parent.document.getElementById("cPartes").height = document.getElementById("cCorpo").scrollHeight + 25;
+            }
+        </script>
         <title>Meu currículo</title>
+        <style>
+            body.corpo{
+                background-color: #ffffff;
+            }
+            p{
+                text-align: justify;
+                text-indent: 50px;
+            }
+            ul.nivel1 {
+                list-style-type: circle;
+            }
+            ul {
+                list-style-type: disc;
+            }
+        </style>
     </head>
-    <body class="corpo">
+    <body class="corpo" id="cCorpo">
         <!--
             @Autor : HeltonBValim
-            Sobre mim
+            Página Apresentação
         -->
         <main>
             <p>
-                Sou um profissional de informática com 20 anos de experiência no setor de suporte (presencial e remoto).
-                Tenho conhecimento em manutenção de computadores - preventiva e corretiva; 
-                formatação e instalação de sistemas operacionais; 
-                instalação e configuração de softwares de escritório e de automação comercial; 
-                conhecimento em programação (Delphi) e banco-de-dados (Postgres e Firebird); 
-                rotinas de RH e DP; 
+                Sou profissional de informática, com 20 anos de experiência. Minhas áreas de atuação são o suporte e a 
+                programação, sendo a primeira onde tenho a maior expertise.<br/>
+            </p>
+            <p>
+                Sou formado em Tecnologia em informática e no decorrer da minha jornada profissional tive a oportunidade de
+                atuar em empresas como Itautec, Stefanini, UniverCidade e ABBR, nas quais pude adquirir sólidos conhecimentos.<br/>
+            </p>
+            <p>
+                Meu objetivo é executar trabalhos com qualidade e excelência, agregando valor à empresa e aos serviços prestados 
+                aos clientes.
             </p>
             <br/>
         </main>

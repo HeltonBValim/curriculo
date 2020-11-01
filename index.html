@@ -4,9 +4,9 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--
-        O link para a folha de estilos foi comentado pois a hospedagem no GitHub pages
+        Os estilos foram adicionados às páginas, pois a hospedagem no GitHub pages
         está acusando erro 404, mesmo com o arquivo presente/comitado no repositório.
-        <link rel="stylesheet" href="_css/estilos.css" type="text/css"/>
+        <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
         -->
         <title>Meu currículo</title>
         <style>
@@ -68,7 +68,7 @@
                 transition: background-color 0.5s;
             }
             nav#menu li:hover {
-                background-color: rgba(0, 0, 0, 0.5);
+                background-color: rgba(0, 0, 0, 0.3);
             }
             nav#menu a {
                 text-decoration: none;
@@ -84,6 +84,12 @@
             footer#rodape {
                 text-align: center;
                 padding-top: 10px;
+            }
+            iframe {
+                display: block;
+                margin: auto;
+                width: 100%;
+                border: none;
             }
         </style>
     </head>
@@ -102,38 +108,31 @@
                 <nav id="menu">
                     <h6>Menu Principal</h6>
                     <ul>
-                        <li><a href="">Home</a>
-                        <li><a href="">Dados Pessoais</a>
-                        <li><a href="">Formação</a>
-                        <li><a href="">Experiências</a>
-                        <li><a href="">Cursos</a>
-                        <li><a href="">Complemento</a>
-                        <li><a href="">Perfil</a>
+                        <li><a href="apresentacao.html" target="tPartes">Home</a>
+                        <li><a href="dados.html" target="tPartes">Dados Pessoais</a>
+                        <li><a href="formacao.html" target="tPartes">Formação</a>
+                        <li><a href="experiencia.html" target="tPartes">Experiências</a>
+                        <li><a href="cursos.html" target="tPartes">Cursos</a>
+                        <li><a href="complemento.html" target="tPartes">Complemento</a>
+                        <li><a href="perfil.html" target="tPartes">Perfil</a>
                     </ul>
                 </nav>
                 <hr>
             </header>
             <section id="partes">
-                <p>
-                    Sou profissional de informática, com 20 anos de experiência. Minhas áreas de atuação são o suporte e a 
-                    programação, sendo a primeira onde tenho a maior expertise.<br/>
-                </p>
-                <p>
-                    Sou formado em Tecnologia em informática e no decorrer da minha jornada profissional tive a oportunidade de
-                    atuar em empresas como Itautec, Stefanini, UniverCidade e ABBR, nas quais pude adquirir sólidos conhecimentos.<br/>
-                </p>
-                <p>
-                    Meu objetivo é executar trabalhos com qualidade e excelência, agregando valor à empresa e aos serviços prestados 
-                    aos clientes.
-                </p>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+                <iframe name="tPartes" id="cPartes" src="apresentacao.html" scrolling="no">Seu navegador não suporta o uso de iframes!</iframe>
             </section>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
             <footer id="rodape">
                 <hr>
+                <!--
+                O arquivo PDF foi retirado da pasta original e renomeado em LowerCase
+                pois o Github estava mostrando erro 404 ao clicar no link.
+                -->
                 <br/>A versão resumida do meu currículo para impressão pode ser baixada em PDF 
                 <a href="cv_heltonbvalim.pdf" target="_blank">clicando aqui</a>.
             </footer>
