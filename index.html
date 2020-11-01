@@ -6,113 +6,9 @@
         <!--
         Os estilos foram adicionados às páginas, pois a hospedagem no GitHub pages
         está acusando erro 404, mesmo com o arquivo presente/comitado no repositório.
-        <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
         -->
+        <link rel="stylesheet" type="text/css" href="css/estilos.css" />
         <title>Meu currículo</title>
-        <style>
-            body.principal {
-                background-color: black;
-                color: rgba(0, 0, 0, 1);
-                font-family: Arial, sans-serif;
-                font-size: 14pt;
-            }
-            div#interface{
-                background-color: #ffffff;
-                width: 80vw;
-                margin: auto;
-                box-shadow: 3px 3px 6px #ffff00;
-                padding: 15px;
-            }
-            hr {
-                height: 3px;
-            }
-            p{
-                text-align: justify;
-                text-indent: 50px;
-            }
-            ul {
-                list-style-type: circle;
-            }
-            hgroup#titulo {
-                height: 120px;
-                text-align: center;
-            }
-            hgroup#titulo h1 {
-                font-size: 40px;
-            }
-            /*Formatação do Menu*/
-            header#cabecalho {
-                margin: 0px;
-                padding: 0px;
-            }
-            nav#menu {
-                display: block;
-                text-align: center;
-            }
-            nav#menu h6 {
-                display: none;
-            }
-            nav#menu ul {
-                position: relative;
-                bottom: 4px;
-                list-style: none;
-                text-transform: uppercase;
-            }
-            nav#menu li {
-                display: inline-block;
-                font-size: 16px;
-                font-weight: bolder;
-                padding: 10px;
-                margin-bottom: 0px;
-                margin-left: 5px;
-                margin-top: 0px;
-                margin-right: 5px;
-                transition: background-color 0.5s;
-            }
-            nav#menu li:hover {
-                background-color: rgba(0, 0, 0, 0.3);
-            }
-            nav#menu a {
-                text-decoration: none;
-                color: rgba(0,0,0,1);
-            }
-            nav#menu a:hover {
-                color: rgba(255,255,255,1);
-                text-decoration: underline;
-            }
-            /* Fim Formatação do Menu*/
-
-            aside#lateral{
-                position: relative;
-                display: inline-block;
-                float: left;
-                width: 10%;
-                background: url("media/cv.png") no-repeat;
-            }
-            img#logo-cv {
-                position: fixed;
-            }
-            section#txt-info {
-                position: relative;
-                display: inline-block;
-                float: right;
-                width: 85%;
-            }
-            div#partes {
-                padding: 20px;
-            }
-            iframe {
-                display: block;
-                margin: auto;
-                width: 100%;
-                border: none;
-            }
-            footer#rodape {
-                clear: both;
-                text-align: center;
-                padding-top: 10px;
-            }
-        </style>
     </head>
     <body class="principal">
         <!--
@@ -121,7 +17,7 @@
         -->
         <div id="interface">
             <aside id="logo-site">
-                <!--><img src="media/cv.png" id="logo-cv"/></!-->
+                <img src="media/cv.png" id="logo-cv"/>
             </aside>
             <section id="txt-info">
                 <header id="cabecalho">
@@ -158,7 +54,7 @@
                 pois o Github estava mostrando erro 404 ao clicar no link.
                 -->
                 <br/>A versão resumida do meu currículo para impressão pode ser baixada em PDF 
-                <a href="cv_heltonbvalim.pdf" target="_blank">clicando aqui</a>.
+                <a href="media/cv_heltonbvalim.pdf" target="_blank">clicando aqui</a>.
             </footer>
         </div>
     </body>
