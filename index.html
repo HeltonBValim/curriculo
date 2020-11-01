@@ -3,8 +3,89 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+        O link para a folha de estilos foi comentado pois a hospedagem no GitHub pages
+        está acusando erro 404, mesmo com o arquivo presente/comitado no repositório.
         <link rel="stylesheet" href="_css/estilos.css" type="text/css"/>
+        -->
         <title>Meu currículo</title>
+        <style>
+            body.principal{
+                background-color: black;
+            }
+            body.corpo{
+                background-color: #ffffff;
+            }
+            hgroup#titulo {
+                height: 120px;
+                text-align: center;
+            }
+            main{
+                background-color: #ffffff;
+                width: 80vw;
+                margin: auto;
+                box-shadow: 3px 3px 6px #ffff00;
+                padding: 30px;
+            }
+
+            p{
+                text-align: justify;
+                text-indent: 50px;
+            }
+            ul {
+                list-style-type: circle;
+            }
+            /*Formatação do Menu*/
+            hr {
+                height: 3px;
+            }
+            header#cabecalho {
+                margin: 0px;
+                padding: 0px;
+            }
+            nav#menu {
+                display: block;
+                text-align: center;
+            }
+            nav#menu h6 {
+                display: none;
+            }
+            nav#menu ul {
+                position: relative;
+                bottom: 4px;
+                list-style: none;
+                text-transform: uppercase;
+            }
+            nav#menu li {
+                display: inline-block;
+                font-size: 16px;
+                font-weight: bolder;
+                padding: 10px;
+                margin-bottom: 0px;
+                margin-left: 5px;
+                margin-top: 0px;
+                margin-right: 5px;
+                transition: background-color 0.5s;
+            }
+            nav#menu li:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+            nav#menu a {
+                text-decoration: none;
+                color: rgba(0,0,0,1);
+            }
+            nav#menu a:hover {
+                color: rgba(255,255,255,1);
+                text-decoration: underline;
+            }
+            section#partes {
+                padding: 20px;
+            }
+            footer#rodape {
+                text-align: center;
+                padding-top: 10px;
+            }
+        </style>
     </head>
     <body class="principal">
         <!--
@@ -13,10 +94,10 @@
         -->
         <main>
             <header id="cabecalho">
-            <hgroup id="titulo">
-                <h1><em>Curriculum Vitae</em></h1>
-                <h2>Helton Braga Valim</h2>
-            </hgroup>
+                <hgroup id="titulo">
+                    <h1><em>Curriculum Vitae</em></h1>
+                    <h2>Helton Braga Valim</h2>
+                </hgroup>
                 <hr>
                 <nav id="menu">
                     <h6>Menu Principal</h6>
@@ -54,7 +135,7 @@
             <footer id="rodape">
                 <hr>
                 <br/>A versão resumida do meu currículo para impressão pode ser baixada em PDF 
-                <a href="_media/CV_HeltonBValim.pdf" target="_blank">clicando aqui</a>.
+                <a href="cv_heltonbvalim.pdf" target="_blank">clicando aqui</a>.
             </footer>
         </main>
     </body>
