@@ -3,17 +3,17 @@
 @Autor : HeltonBValim
 */
 /*Formatações gerais*/
-body {
+body#principal {
     /*    background-color: black;
         color: rgba(0, 0, 0, 1);*/
     font-family: Arial, sans-serif;
 }
 div#interface {
-    /*    background-color: #ffffff;*/
+    /*background-color: #ffffff;*/
     width: 80vw;
     height: 100%;
     margin: auto;
-    /*    box-shadow: 3px 3px 6px #0000ff;*/
+    /*box-shadow: 3px 3px 6px #0000ff;*/
 }
 div#esquerda {
     position: relative;
