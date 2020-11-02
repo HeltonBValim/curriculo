@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/padrao.css" />
         <title>Meu currículo</title>
     </head>
-    <body class="principal">
+    <body id="principal">
         <!--
             @Autor : HeltonBValim
             Página principal do meu currículo
         -->
         <div id="interface">
-            <aside id="logo-site">
-                <img src="media/cv.png" id="logo-cv"/>
-            </aside>
-            <section id="txt-info">
+            <div id="esquerda">
+                <aside id="logo-site">
+                    <img src="media/cv.png" id="logo-cv"/>
+                </aside>
+            </div>
+            <div id="direita">
                 <header id="cabecalho">
                     <hgroup id="titulo">
                         <h1>Helton Braga Valim</h1>
                     </hgroup>
                     <hr>
                     <nav id="menu">
-                        <h6>Menu Principal</h6>
+                        <span class="invisivel">Menu Principal</span>
                         <ul>
                             <li><a href="apresentacao.html" target="tPartes">Home</a>
                             <li><a href="dados.html" target="tPartes">Dados Pessoais</a>
@@ -35,23 +37,17 @@
                     </nav>
                     <hr>
                 </header>
-                <div id="partes">
-                    <iframe name="tPartes" id="cPartes" src="apresentacao.html" scrolling="no">Seu navegador não suporta o uso de iframes!</iframe>
-                </div>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-            </section>
-            <footer id="rodape">
-                <hr>
-                <!--
-                O arquivo PDF foi retirado da pasta original e renomeado em LowerCase
-                pois o Github estava mostrando erro 404 ao clicar no link.
-                -->
-                <br/>A versão resumida do meu currículo para impressão pode ser baixada em PDF 
-                <a href="cv_heltonbvalim.pdf" target="_blank">clicando aqui</a>.
-            </footer>
+                <iframe name="tPartes" id="cPartes" src="apresentacao.html"></iframe>
+                <footer id="rodape">
+                    <hr>
+                    <!--
+                    O arquivo PDF foi retirado da pasta original e renomeado em LowerCase
+                    pois o Github estava mostrando erro 404 ao clicar no link.
+                    -->
+                    <br/>A versão resumida do meu currículo para impressão pode ser baixada em PDF 
+                    <a href="cv_heltonbvalim.pdf" target="_blank">clicando aqui</a>.
+                </footer>
+            </div>
         </div>
     </body>
 </html>
