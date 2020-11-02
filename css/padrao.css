@@ -4,16 +4,16 @@
 */
 /*Formatações gerais*/
 body {
-/*    background-color: black;
-    color: rgba(0, 0, 0, 1);*/
+    /*    background-color: black;
+        color: rgba(0, 0, 0, 1);*/
     font-family: Arial, sans-serif;
 }
 div#interface {
-/*    background-color: #ffffff;*/
+    /*    background-color: #ffffff;*/
     width: 80vw;
     height: 100%;
     margin: auto;
-/*    box-shadow: 3px 3px 6px #0000ff;*/
+    /*    box-shadow: 3px 3px 6px #0000ff;*/
 }
 div#esquerda {
     position: relative;
@@ -40,6 +40,12 @@ header#cabecalho {
     padding: 0px;
     height: 200px;
 }
+header#cabecalho h6 {
+    margin-bottom: 0px;
+    font-size: 10pt;
+    color: #606060;
+}
+
 hgroup#titulo {
     height: 100px;
     text-align: center;
@@ -111,4 +117,7 @@ ul {
 }
 .invisivel {
     display: none;
+}
+.direita {
+    text-align: right;
 }
