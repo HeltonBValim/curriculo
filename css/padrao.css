@@ -4,16 +4,27 @@
 */
 /*Formatações gerais*/
 body#principal {
-    /*    background-color: black;
-        color: rgba(0, 0, 0, 1);*/
+    background-color: black;
+    color: rgba(0, 0, 0, 1);
     font-family: Arial, sans-serif;
 }
+table#corpo {
+    background-color: #ffffff;
+    border: 2px solid #606060;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*table#corpo td#lateral {
+    width: 15%;
+    height: 100
+}*/
 div#interface {
-    /*background-color: #ffffff;*/
-    width: 80vw;
+    background-color: #ffffff;
+    width: 90vw;
     height: 100%;
     margin: auto;
-    /*box-shadow: 3px 3px 6px #0000ff;*/
+    box-shadow: 3px 3px 6px #ffff00;
 }
 div#esquerda {
     position: relative;
@@ -23,10 +34,10 @@ div#esquerda {
     margin: auto;   
 }
 img#logo-cv {
-    position: fixed;
     margin: auto;
-    width: 150px;
+    width: 15%;
     height: 620px;
+    padding: 5px;
 }
 div#direita {
     position: relative;
@@ -45,7 +56,6 @@ header#cabecalho h6 {
     font-size: 10pt;
     color: #606060;
 }
-
 hgroup#titulo {
     height: 100px;
     text-align: center;
@@ -110,14 +120,20 @@ p{
     text-indent: 50px;
 }
 ul.nivel1 {
-    list-style-type: disc;
+    list-style-type: circle;
 }
 ul {
-    list-style-type: circle;
+    list-style-type: disc;
 }
 .invisivel {
     display: none;
 }
 .direita {
     text-align: right;
+}
+.esquerda {
+    text-align: left;
+}
+.centro {
+    text-align: center;
 }

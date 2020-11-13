@@ -12,43 +12,37 @@
             Página principal do meu currículo
         -->
         <div id="interface">
-            <div id="esquerda">
-                <aside id="logo-site">
-                    <img src="media/cv.png" id="logo-cv"/>
-                </aside>
-            </div>
-            <div id="direita">
-                <header id="cabecalho">
-                    <hgroup id="titulo">
+            <table id="corpo">
+                <tr>
+                    <td class="centro" rowspan="3" id="lateral">
+                        <img src="media/cv.png" id="logo-cv"/>
+                    </td>
+                    <td class="centro">
                         <h1>Helton Braga Valim</h1>
                         <h6 class="direita">última atualização: 01/11/2020.</h6>
-                    </hgroup>
-                    <hr>
-                    <nav id="menu">
-                        <span class="invisivel">Menu Principal</span>
-                        <ul>
-                            <li><a href="apresentacao.html" target="tPartes">Home</a>
-                            <li><a href="dados.html" target="tPartes">Dados Pessoais</a>
-                            <li><a href="formacao.html" target="tPartes">Formação</a>
-                            <li><a href="experiencia.html" target="tPartes">Experiências</a>
-                            <li><a href="cursos.html" target="tPartes">Cursos</a>
-                            <li><a href="complemento.html" target="tPartes">Complemento</a>
-                            <li><a href="perfil.html" target="tPartes">Perfil</a>
-                        </ul>
-                    </nav>
-                    <hr>
-                </header>
-                <iframe name="tPartes" id="cPartes" src="apresentacao.html"></iframe>
-                <footer id="rodape">
-                    <hr>
-                    <!--
-                    O arquivo PDF foi retirado da pasta original e renomeado em LowerCase
-                    pois o Github estava mostrando erro 404 ao clicar no link.
-                    -->
-                    <br/>A versão resumida do meu currículo para impressão pode ser baixada em PDF 
-                    <a href="cv_heltonbvalim.pdf" target="_blank">clicando aqui</a>.
-                </footer>
-            </div>
+                        <hr>
+                        <nav id="menu">
+                            <span class="invisivel">Menu Principal</span>
+                            <ul>
+                                <li><a href="apresentacao.html" target="tPartes">Home</a>
+                                <li><a href="dados.html" target="tPartes">Dados Pessoais</a>
+                                <li><a href="formacao.html" target="tPartes">Formação</a>
+                                <li><a href="experiencia.html" target="tPartes">Experiências</a>
+                                <li><a href="cursos.html" target="tPartes">Cursos</a>
+                                <li><a href="complemento.html" target="tPartes">Complemento</a>
+                                <li><a href="perfil.html" target="tPartes">Perfil</a>
+                            </ul>
+                        </nav>
+                        <hr>
+                    </td>
+                </tr>
+                <tr>
+                    <td>meio</td>
+                </tr>
+                <tr>
+                    <td>rodapé</td>
+                </tr>
+            </table>
         </div>
     </body>
 </html>
