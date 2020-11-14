@@ -41,16 +41,15 @@ div#interface {
 }
     aside#esquerda {
         display: block;
-        width: 14%;
+        width: 12%;
         float: left;
-        border-right: 1px solid #606060;
-        padding-right: 10px;
+        padding-right: 1px;
     }
     img#logo-cv {
-        position: fixed;
+        /*position: fixed;*/
         margin: auto;
-        width: 150px;
-        height: 620px;
+        max-width: 100%;
+        /*height: 620px;*/
     }
     section#direita {
         display: block;
