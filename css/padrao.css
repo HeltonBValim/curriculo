@@ -8,110 +8,7 @@ body#principal {
     color: rgba(0, 0, 0, 1);
     font-family: Arial, sans-serif;
 }
-table#corpo {
-    background-color: #ffffff;
-    border: 2px solid #606060;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-/*table#corpo td#lateral {
-    width: 15%;
-    height: 100
-}*/
-div#interface {
-    background-color: #ffffff;
-    width: 90vw;
-    height: 100%;
-    margin: auto;
-    box-shadow: 3px 3px 6px #ffff00;
-}
-div#esquerda {
-    position: relative;
-    display: inline-block;
-    float: left;
-    width: 10%;
-    margin: auto;   
-}
-img#logo-cv {
-    margin: auto;
-    width: 15%;
-    height: 620px;
-    padding: 5px;
-}
-div#direita {
-    position: relative;
-    display: inline-block;
-    float: right;
-    width: 85%;
-    height: 620px;
-}
-header#cabecalho {
-    margin: auto;
-    padding: 0px;
-    height: 200px;
-}
-header#cabecalho h6 {
-    margin-bottom: 0px;
-    font-size: 10pt;
-    color: #606060;
-}
-hgroup#titulo {
-    height: 100px;
-    text-align: center;
-}
-hgroup#titulo h1 {
-    font-size: 50px;
-}
-nav#menu {
-    display: block;
-    text-align: center;
-}
-nav#menu ul {
-    position: relative;
-    bottom: 4px;
-    list-style: none;
-    text-transform: uppercase;
-}
-nav#menu li {
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bolder;
-    padding: 10px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    margin-top: 0px;
-    margin-right: 5px;
-    transition: background-color 0.5s;
-}
-nav#menu li:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-nav#menu a {
-    text-decoration: none;
-    color: rgba(0,0,0,1);
-}
-nav#menu a:hover {
-    color: rgba(255,255,255,1);
-    text-decoration: underline;
-}
-iframe {
-    margin: auto;
-    border: none;
-    width: 100%;
-    height: 300px;
-    padding: 10px;
-}
-footer#rodape {
-    text-align: center;
-    margin: auto 0px auto 0px;
-    height: 50px;
-    padding: 0px;
-}
-footer#rodape hr {
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-}
+/*Configurações gerais*/
 hr {
     height: 3px;
 }
@@ -119,11 +16,11 @@ p{
     text-align: justify;
     text-indent: 50px;
 }
-ul.nivel1 {
-    list-style-type: circle;
-}
 ul {
     list-style-type: disc;
+}
+ul.nivel1 {
+    list-style-type: circle;
 }
 .invisivel {
     display: none;
@@ -131,9 +28,105 @@ ul {
 .direita {
     text-align: right;
 }
-.esquerda {
-    text-align: left;
-}
 .centro {
     text-align: center;
 }
+/**/
+div#interface {
+    background-color: white;
+    width: 90vw;
+    height: 100%;
+    margin: auto;
+    box-shadow: 3px 3px 6px #ffff00;
+}
+    aside#esquerda {
+        display: block;
+        width: 14%;
+        float: left;
+        border-right: 1px solid #606060;
+        padding-right: 10px;
+    }
+    img#logo-cv {
+        position: fixed;
+        margin: auto;
+        width: 150px;
+        height: 620px;
+    }
+    section#direita {
+        display: block;
+        width: 84%;
+        float: right;
+        margin-right: 10px;
+    }
+    header#cabecalho {
+        margin: auto;
+        padding: 0px;
+        height: 200px;
+    }
+    hgroup#titulo {
+        height: 100px;
+        text-align: center;
+    }
+        hgroup#titulo h1 {
+            font-size: 45px;
+        }
+        hgroup#titulo h6 {
+            text-align: right;
+            margin-bottom: 5px;
+            font-size: 10pt;
+            color: #606060;
+        }
+    nav#menu {
+        display: block;
+        text-align: center;
+    }
+        nav#menu ul {
+            position: relative;
+            bottom: 4px;
+            list-style: none;
+            text-transform: uppercase;
+        }
+        nav#menu li {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: bolder;
+            padding: 10px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+            margin-top: 0px;
+            margin-right: 5px;
+            transition: background-color 0.5s;
+        }
+        nav#menu li:hover {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        nav#menu a {
+            text-decoration: none;
+            color: rgba(0,0,0,1);
+        }
+        nav#menu a:hover {
+            color: rgba(255,255,255,1);
+            text-decoration: underline;
+        }
+    iframe#cPartes {
+        display: block;
+        position: relative;
+        margin: 10px auto 10px auto;
+        border: none;
+        width: 95%;
+        height: 300px;
+        padding: 10px;
+    }
+    footer#rodape {
+        clear: both;
+        text-align: center;
+        margin: auto 0px 30px 0px;
+        height: 50px;
+        padding-bottom: 15px;
+    }
+        footer#rodape hr {
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
