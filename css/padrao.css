@@ -3,6 +3,9 @@
 @Autor : HeltonBValim
 */
 /*Formatações gerais*/
+html {
+    font-size: 16px;    
+}
 body#principal {
     background-color: black;
     color: rgba(0, 0, 0, 1);
@@ -11,6 +14,9 @@ body#principal {
 /*Configurações gerais*/
 hr {
     height: 3px;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 p{
     text-align: justify;
@@ -41,38 +47,43 @@ div#interface {
 }
     aside#esquerda {
         display: block;
-        width: 12%;
+        width: 12vw;
         float: left;
         padding-right: 1px;
     }
     img#logo-cv {
-        /*position: fixed;*/
-        margin: auto;
+        position: relative;
+        display: block;
+        float: inside;
+        margin: 15px;
         max-width: 100%;
-        /*height: 620px;*/
+        max-height: 100%;
     }
     section#direita {
         display: block;
-        width: 84%;
+        width: 75vw;
         float: right;
-        margin-right: 10px;
+        margin: 0px 20px 0px 0px;
     }
     header#cabecalho {
-        margin: auto;
+        margin-bottom: 0px;
+        margin: 0px auto 0px auto;
         padding: 0px;
-        height: 200px;
     }
     hgroup#titulo {
         height: 100px;
         text-align: center;
     }
         hgroup#titulo h1 {
-            font-size: 45px;
+            font-size: 3rem;
+            margin: 40px 0px 0px 0px;
+            padding: 0px;
         }
         hgroup#titulo h6 {
             text-align: right;
-            margin-bottom: 5px;
-            font-size: 10pt;
+            margin: 10px 5px 10px 0px;
+            padding: 0px;
+            font-size: 1rem;
             color: #606060;
         }
     nav#menu {
@@ -87,7 +98,6 @@ div#interface {
         }
         nav#menu li {
             display: inline-block;
-            font-size: 16px;
             font-weight: bolder;
             padding: 10px;
             margin-bottom: 0px;
@@ -110,18 +120,15 @@ div#interface {
     iframe#cPartes {
         display: block;
         position: relative;
-        margin: 10px auto 10px auto;
-        border: none;
+        margin: 0px auto 0px auto;
+        padding: 5px 0px 5px 0px;
+        border: 0px;
         width: 95%;
-        height: 300px;
-        padding: 10px;
+        height: 20rem;
     }
     footer#rodape {
         clear: both;
-        text-align: center;
-        margin: auto 0px 30px 0px;
-        height: 50px;
-        padding-bottom: 15px;
+        margin: auto 0px 5px 0px;
     }
         footer#rodape hr {
             padding-bottom: 0px;
