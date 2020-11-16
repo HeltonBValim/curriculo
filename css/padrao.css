@@ -37,6 +37,15 @@ ul.nivel1 {
 .centro {
     text-align: center;
 }
+.ini-cont {
+    counter-reset: meucontador;
+}
+.imp-cont {
+    content: counter(meucontador);
+}
+.inc-cont:before {
+    counter-increment: meucontador;
+}
 /**/
 div#interface {
     background-color: white;
@@ -58,6 +67,11 @@ div#interface {
         margin: 15px;
         max-width: 100%;
         max-height: 100%;
+    }
+    img#foto3x4 {
+        display: block;
+        position: absolute;
+        right: 5em;
     }
     section#direita {
         display: block;
@@ -125,6 +139,9 @@ div#interface {
         border: 0px;
         width: 95%;
         height: 20rem;
+    }
+    div#cont {
+        text-align: center;
     }
     footer#rodape {
         clear: both;
