@@ -37,6 +37,10 @@ ul.nivel1 {
 .centro {
     text-align: center;
 }
+.destaque{
+    font-weight: bold;
+    font-style: italic;
+}
 .ini-cont {
     counter-reset: meucontador;
 }
