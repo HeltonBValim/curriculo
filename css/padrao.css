@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/* 
-@Autor : HeltonBValim
-*/
+
+/*@Autor : HeltonBValim*/
+
 /*Formatações gerais*/
 html {
     font-size: 16px;    
@@ -64,24 +64,28 @@ div#interface {
         float: left;
         padding-right: 1px;
     }
+    section#direita {
+        display: block;
+        width: 75vw;
+        float: right;
+        margin: 0px 20px 0px 0px;
+    }
     img#logo-cv {
         position: relative;
         display: block;
         float: inside;
         margin: 15px;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 90%;
+        max-height: 90%;
     }
     img#foto3x4 {
         display: block;
         position: absolute;
         right: 5em;
     }
-    section#direita {
-        display: block;
-        width: 75vw;
-        float: right;
-        margin: 0px 20px 0px 0px;
+    img#site_logos {
+        height: 10pt;
+        width: 10pt;
     }
     header#cabecalho {
         margin-bottom: 0px;
