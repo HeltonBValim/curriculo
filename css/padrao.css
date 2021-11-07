@@ -13,7 +13,7 @@ body#principal {
 }
 /*Configurações gerais*/
 hr {
-    height: 3px;
+    height: 2px;
     max-width: 100%;
     margin: 0px;
     padding: 0px;
@@ -41,49 +41,40 @@ ul.nivel1 {
     font-weight: bold;
     font-style: italic;
 }
-.ini-cont {
-    counter-reset: meucontador;
-}
-.imp-cont {
-    content: counter(meucontador);
-}
-.inc-cont:before {
-    counter-increment: meucontador;
-}
 /**/
 div#interface {
     background-color: white;
-    width: 90vw;
+    width: 95%;
     height: 100%;
     margin: auto;
     box-shadow: 3px 3px 6px #ffff00;
 }
     aside#esquerda {
         display: block;
-        width: 12vw;
+        width: 12%;
         float: left;
-        padding-right: 1px;
+        /*padding-right: 1px;*/
     }
     section#direita {
         display: block;
-        width: 75vw;
+        width: 75%;
         float: right;
         margin: 0px 20px 0px 0px;
     }
     img#logo-cv {
-        position: relative;
+        position: center;
         display: block;
         float: inside;
-        margin: 15px;
+        margin: 2px;
         max-width: 90%;
         max-height: 90%;
     }
     img#foto3x4 {
         display: block;
         position: absolute;
-        right: 5em;
+        right: 2px;
     }
-    img#site_logos {
+    img#home {
         height: 10pt;
         width: 10pt;
     }

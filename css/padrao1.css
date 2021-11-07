@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@media screen and (min-width:1024px) {
+/*Formatações de página*/
+html {
+    font-size: 1rem;
+}
+body#principal {
+    background-color: black;
+    color: rgba(0, 0, 0, 1);
+    font-family: Arial, sans-serif;
+}
+div#interface {
+    background-color: white;
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    box-shadow: 3px 3px 6px #ffff00;
+}
+aside#esquerda {
+    display: block;
+    width: 20%;
+    float: left;
+}
+section#direita {
+    display: block;
+    width: 80%;
+    float: left;
+    background-image: url("../files/imgs/logos/hbvtec.png");
+    background-color: rgba(255,255,255,0.8);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+footer#rodape {
+    clear: both;
+    margin: auto 0px 5px 0px;
+}
+/**/
+/*Configurações gerais*/
+hr {
+    height: 2px;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+ul {
+    list-style-type: disc;
+}
+ul.nivel1 {
+    list-style-type: circle;
+}
+.invisivel {
+    display: none;
+}
+.direita {
+    text-align: right;
+}
+.centro {
+    text-align: center;
+}
+.destaque{
+    font-weight: bold;
+    font-style: italic;
+}
+/**/
+/*Configurações do Menu*/
+header#cabecalho {
+    margin-bottom: 0px;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+}
+hgroup#titulo {
+    height: 100px;
+    text-align: center;
+}
+hgroup#titulo h1 {
+    font-size: 3rem;
+    margin: 40px 0px 0px 0px;
+    padding: 0px;
+}
+hgroup#titulo h6 {
+    text-align: right;
+    margin: 10px 5px 10px 0px;
+    padding: 0px;
+    font-size: 1rem;
+    color: #606060;
+}
+nav#menu {
+    display: flex;
+    float: center;
+    text-align: center;
+}
+nav#menu ul {
+    position: relative;
+    bottom: 4px;
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li {
+    display: inline-block;
+    font-weight: bolder;
+    padding: 2px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    margin-top: 0px;
+    margin-right: 5px;
+    transition: background-color 0.5s;
+}
+nav#menu li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+nav#menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+nav#menu a:hover {
+    color: rgba(255,255,255,1);
+    text-decoration: underline;
+}
+/**/
+/*Imagens*/
+img#logo-cv {
+    display: block;
+    margin: auto;
+    width: 95%;
+    max-height: 95%;
+}
+img#foto3x4 {
+    display: block;
+    position: absolute;
+    right: 5px;
+    height: 65%;
+    width: 25%;
+}
+img#home {
+    height: 25px;
+    width: 25px;
+}
+/**/
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {}
+@media screen and (max-width:767px) {}
+
+/*@Autor : HeltonBValim*/
+
