@@ -1,53 +1,71 @@
 @charset "UTF-8";
+/*@Autor : HeltonBValim*/
 
+@media screen and (max-width:767px) {}
+@media screen and (min-width:768px) and (max-width:1023px) {}
 @media screen and (min-width:1024px) {
-/*Formatações de página*/
+/*Estrutura da página*/
 html {
-    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    font-size: 12px;
 }
-body#principal {
-    background-color: black;
-    color: rgba(0, 0, 0, 1);
-    font-family: Arial, sans-serif;
+body {
+    margin: 1vh;
+    padding: 1vh;
+    background-color: rgb(255, 255, 255);
 }
-div#interface {
-    background-color: white;
-    width: 95%;
-    height: 100%;
-    margin: auto;
-    box-shadow: 3px 3px 6px #ffff00;
+.embalagem {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 25vh 55vh 14vh;
+    gap: 1vh;
+    grid-template-areas: "aside header"
+                         "aside main"
+                         "aside footer";
 }
-aside#esquerda {
-    display: block;
-    width: 20%;
-    float: left;
-}
-section#direita {
-    display: block;
-    width: 80%;
-    float: left;
-    background-image: url("../files/imgs/logos/hbvtec.png");
-    background-color: rgba(255,255,255,0.8);
-    background-blend-mode: lighten;
+aside {
+    background: url("../files/imgs/cv_v.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    grid-area: aside;
 }
-footer#rodape {
-    clear: both;
-    margin: auto 0px 5px 0px;
+header {
+    grid-area: header;
+    background-color: aqua;
 }
-/**/
-/*Configurações gerais*/
+main {
+    background: url("../files/imgs/logos/hbvtec.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
+    display: flex;
+    flex-direction: column;
+    grid-area: main;
+}
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+footer {
+    grid-area: footer;
+    background-color: yellow;
+}
+/*Formatações gerais*/
 hr {
-    height: 2px;
+    height: .1rem;
     max-width: 100%;
     margin: 0px;
     padding: 0px;
 }
 p{
     text-align: justify;
-    text-indent: 50px;
+    text-indent: 5em;
 }
 ul {
     list-style-type: disc;
@@ -68,85 +86,60 @@ ul.nivel1 {
     font-weight: bold;
     font-style: italic;
 }
-/**/
-/*Configurações do Menu*/
-header#cabecalho {
-    margin-bottom: 0px;
-    margin: 0px auto 0px auto;
-    padding: 0px;
-}
-hgroup#titulo {
-    height: 100px;
-    text-align: center;
+.conteudo {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-blend-mode: lighten;
 }
 hgroup#titulo h1 {
-    font-size: 3rem;
-    margin: 40px 0px 0px 0px;
-    padding: 0px;
+    font-size: 2.5em;
 }
 hgroup#titulo h6 {
     text-align: right;
-    margin: 10px 5px 10px 0px;
-    padding: 0px;
-    font-size: 1rem;
+    font-size: 1em;
     color: #606060;
+    margin: 0 1em 0 0;
+    padding: 0;
 }
+/*Menu*/
 nav#menu {
     display: flex;
-    float: center;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
 }
-nav#menu ul {
-    position: relative;
-    bottom: 4px;
-    list-style: none;
-    text-transform: uppercase;
-}
-nav#menu li {
-    display: inline-block;
-    font-weight: bolder;
-    padding: 2px;
-    margin-bottom: 0px;
-    margin-left: 5px;
-    margin-top: 0px;
-    margin-right: 5px;
-    transition: background-color 0.5s;
-}
-nav#menu li:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-nav#menu a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-nav#menu a:hover {
-    color: rgba(255,255,255,1);
-    text-decoration: underline;
-}
-/**/
+    nav#menu ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    nav#menu li {
+        font-size: 1.5em;
+        font-weight: bolder;
+        transition: background-color 0.5s;
+        margin: 0 .5em 0 .5em;
+        padding: .1rem;
+    }
+    nav#menu li:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    nav#menu a {
+        text-decoration: none;
+        color: rgba(0,0,0,1);
+    }
+    nav#menu a:hover {
+        color: rgba(255,255,255,1);
+        text-decoration: underline;
+    }
 /*Imagens*/
-img#logo-cv {
-    display: block;
-    margin: auto;
-    width: 95%;
-    max-height: 95%;
+.icone {
+    height: 1em;
+    width: 1em;
 }
 img#foto3x4 {
     display: block;
     position: absolute;
-    right: 5px;
-    height: 65%;
-    width: 25%;
+    right: 1em;
 }
-img#home {
-    height: 25px;
-    width: 25px;
-}
-/**/
-}
-
-@media screen and (min-width:768px) and (max-width:1023px) {}
-@media screen and (max-width:767px) {}
-
-/*@Autor : HeltonBValim*/
-

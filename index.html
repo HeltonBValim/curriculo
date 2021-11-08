@@ -9,48 +9,47 @@
     <body id="principal">
         <!--
             @Autor : HeltonBValim
-            Página principal do meu currículo
+            Currículo Vitae
+            Página principal - estrutura
         -->
-        <div id="interface">
-            <aside id="esquerda">
-                <img src="files/imgs/cv.png" id="logo-cv" alt="imagem principal do curriculo"/>
+        <div id="interface" class="embalagem">
+            <aside>
+                <!--O aside está com uma imagem no background
+                para melhor distribuição e centralização da mesma-->
             </aside>
-            <section id="direita">
-                <header id="cabecalho">
-                    <hgroup id="titulo">
-                        <h1>Helton Braga Valim</h1>
-                        <h6>Última atualização: 1.</h6>
-                    </hgroup>
-                    <hr>
-                    <nav id="menu">
-                        <span class="invisivel">Menu Principal</span>
-                        <ul>
-                            <li><a href="apresentacao.html" target="tPartes"><img src="files/imgs/home.png" id="home"></a>
-                            <li><a href="dados.html" target="tPartes">Dados Pessoais</a>
-                            <li><a href="formacao.html" target="tPartes">Formação</a>
-                            <li><a href="experiencia.html" target="tPartes">Experiências</a>
-                            <li><a href="cursos.html" target="tPartes">Cursos</a>
-                            <li><a href="complemento.html" target="tPartes">Complemento</a>
-                            <li><a href="perfil.html" target="tPartes">Perfil</a>
-                        </ul>
-                    </nav>
-                    <hr>
-                </header>
-                <iframe name="tPartes" id="cPartes" src="apresentacao.html"></iframe>
+            <header>
+                <hgroup id="titulo" class="centro">
+                    <h1>Helton Braga Valim</h1>
+                    <h6>Última atualização: 2</h6>
+                </hgroup>
                 <hr>
-                <div class="centro">
-                    <!--
-                    Verificar:    
-                    O arquivo PDF foi retirado da pasta original e renomeado em LowerCase pois o Github estava mostrando erro 404 ao clicar no link.
-                    -->
-                    <br/>A versão resumida do meu currículo para impressão pode ser baixada em PDF <a href="files/CV_HeltonBValim.pdf" target="_blank">clicando aqui</a>.<br/>
-                    Para conhecer meu repositório no gitHub <a href="https://github.com/HeltonBValim" target="_blank">clique aqui</a>.
-                </div>
-                    <!--
-                        adicionar um contador de visitas aqui!
-                    -->
-            </section>
-            <footer id="rodape"></footer>
+                <nav id="menu" name="topo" class="centro">
+                    <span class="invisivel">Menu Principal</span>
+                    <ul>
+                        <li><a href="apresentacao.html" target="tPartes"><img id="home" class="icone" src="files/imgs/home.png"></a>
+                        <li><a href="dados.html" target="tPartes">Dados Pessoais</a>
+                        <li><a href="formacao.html" target="tPartes">Formação</a>
+                        <li><a href="experiencia.html" target="tPartes">Experiências</a>
+                        <li><a href="cursos.html" target="tPartes">Cursos</a>
+                        <li><a href="complemento.html" target="tPartes">Complemento</a>
+                        <li><a href="perfil.html" target="tPartes">Perfil</a>
+                    </ul>
+                </nav>
+                <hr>
+            </header>
+            <main id="conteudo">
+                <iframe name="tPartes" id="cPartes" src="apresentacao.html"></iframe>
+            </main>
+            <footer class="centro">
+                <hr>
+                <br/>A versão resumida do meu currículo para impressão pode ser baixada em PDF <a href="files/CV_HeltonBValim.pdf" target="_blank">clicando aqui</a>.<br/>
+                Para conhecer meu repositório no gitHub <a href="https://github.com/HeltonBValim" target="_blank">clique aqui</a>.
+                <!--
+                Verificar:    
+                1. O arquivo PDF foi retirado da pasta original e renomeado em LowerCase pois o Github estava mostrando erro 404 ao clicar no link.
+                2. Adicionar um contador de visitas.
+                -->
+            </footer>
         </div>
     </body>
 </html>
