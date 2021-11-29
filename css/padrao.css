@@ -5,15 +5,39 @@ html#base {
     padding: 0;
     box-sizing: border-box;
     background-color: rgb(0, 0, 0);
+}
+/* .font-size-6 { font-size: calc(6px + 0.6vw) }
+.font-size-7 { font-size: calc(7px + 0.7vw) }
+.font-size-8 { font-size: calc(8px + 0.8vw) }
+.font-size-9 { font-size: calc(9px + 0.9vw) }
+.font-size-10 { font-size: calc(10px + 1vw) }
+.font-size-11 { font-size: calc(11px + 1.1vw) }
+.font-size-12 { font-size: calc(12px + 1.2vw) }
+.font-size-13 { font-size: calc(13px + 1.3vw) }
+.font-size-14 { font-size: calc(14px + 1.4vw) }
+.font-size-15 { font-size: calc(15px + 1.5vw) }
+.font-size-16 { font-size: calc(16px + 1.6vw) }
+.font-size-17 { font-size: calc(17px + 1.7vw) }
+.font-size-18 { font-size: calc(18px + 1.8vw) }
+.font-size-19 { font-size: calc(19px + 1.9vw) }
+.font-size-20 { font-size: calc(20px + 2vw) }
+.font-size-21 { font-size: calc(21px + 2.1vw) }
+.font-size-22 { font-size: calc(22px + 2.2vw) }
+.font-size-23 { font-size: calc(23px + 2.3vw) }
+.font-size-24 { font-size: calc(24px + 2.4vw) }
+.font-size-25 { font-size: calc(25px + 2.5vw) }
+.font-size-26 { font-size: calc(26px + 2.6vw) }
+.font-size-27 { font-size: calc(27px + 2.7vw) }
+.font-size-28 { font-size: calc(28px + 2.8vw) }
+.font-size-29 { font-size: calc(29px + 2.9vw) }
+.font-size-30 { font-size: calc(30px + 3vw) } */
+body {
+    margin: .5em;
+    padding: .5em;
+    background-color: rgb(255, 255, 255);
     font-size: 16px;
 }
-body {
-    margin: .5rem;
-    padding: .5rem;
-    background-color: rgb(255, 255, 255);
-}
 aside {
-    background: url("../files/imgs/cv_v.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -47,14 +71,14 @@ footer {
 }
 /*Formatações gerais*/
 hr {
-    height: .1rem;
+    height: .1em;
     max-width: 100%;
     margin: 0px;
     padding: 0px;
 }
 p{
     text-align: justify;
-    text-indent: 5rem;
+    text-indent: 5em;
 }
 ul {
     list-style-type: disc;
@@ -77,15 +101,15 @@ ul.nivel1 {
 }
 hgroup#titulo h1 {
     text-align: center;
-    font-size: 2rem;
-    margin: 1rem 0 1rem 0;
+    font-size: calc(14px + 1.4vw);
+    margin: 1em 0 1em 0;
     padding: 0;
 }
 hgroup#titulo h6 {
     text-align: right;
-    font-size: 1rem;
+    font-size: calc(6px + .6vw);
     color: #606060;
-    margin: 0 1rem .5rem 0;
+    margin: 0 1em .5em 0;
     padding: 0;
 }
 /*Menu*/
@@ -104,11 +128,11 @@ nav#menu {
         text-transform: uppercase;
     }
     nav#menu li {
-        font-size: 1rem;
+        font-size: 1.8em;
         font-weight: bolder;
         transition: background-color 0.5s;
-        margin: .2rem;
-        padding: 0 .5rem 0 .5rem;
+        margin: .2em;
+        padding: 0 .5em 0 .5em;
     }
     nav#menu li:hover {
         background-color: rgba(0, 0, 0, 0.3);
@@ -123,17 +147,48 @@ nav#menu {
     }
 /*Imagens*/
 .icone {
-    height: 1rem;
-    width: 1rem;
+    height: 1em;
+    width: 1em;
 }
 img#foto3x4 {
     display: block;
     position: absolute;
-    right: 1rem;
+    right: 1em;
 }
-@media screen and (max-width:767px) {}
-@media screen and (min-width:768px) and (max-width:1023px) {}
+@media screen and (max-width:767px) {
+aside {
+    background: url("../files/imgs/cv_h.png");
+}
+.embalagem {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 25vh 55vh 14vh;
+    gap: .1vh;
+    grid-template-areas: "aside"
+                         "header"
+                         "main"
+                         "footer";
+}
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+aside {
+    background: url("../files/imgs/cv_h.png");
+}
+.embalagem {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 25vh 55vh 14vh;
+    gap: .5vh;
+    grid-template-areas: "aside"
+                         "header"
+                         "main"
+                         "footer";
+}
+}
 @media screen and (min-width:1024px) {
+aside {
+    background: url("../files/imgs/cv_v.png");
+}
 .embalagem {
     display: grid;
     grid-template-columns: 1fr 5fr;
