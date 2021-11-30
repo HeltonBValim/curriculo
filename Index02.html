@@ -13,27 +13,54 @@
         </script>
         -->
     </head>
-    <body>
+    <body id="principal">
         <!--
             @Autor : HeltonBValim
-            Página de Conteúdo
+            Currículo Vitae
+            Modelo em página única.
         -->
-        <div class="conteudo">
+        <aside>
+            <!--O aside está com uma imagem no background
+            para melhor distribuição e centralização da mesma-->
+        </aside>
+        <header>
+            <hgroup id="titulo" class="centro">
+                <h1><span class="fs14">Helton Braga Valim</span><h1>
+                <h6><span class="fs6">Última atualização: 28/11/2021.</span></h6>
+            </hgroup>
+            <hr>
+            <nav id="menu" name="topo" class="centro">
+                <span class="invisivel">Menu Principal</span>
+                <ul class="fs6">
+                    <li><a href="apresentacao.html" target="tPartes"><img id="home" class="icone" src="files/imgs/home.png"></a>
+                    <li><a href="dados.html" target="tPartes">Dados Pessoais</a>
+                    <li><a href="formacao.html" target="tPartes">Formação</a>
+                    <li><a href="experiencia.html" target="tPartes">Experiências</a>
+                    <li><a href="cursos.html" target="tPartes">Cursos</a>
+                    <li><a href="complemento.html" target="tPartes">Complemento</a>
+                    <li><a href="perfil.html" target="tPartes">Perfil</a>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main id="conteudo">
             <div id="prs" name="apresentacao">
                 <!--
                 Apresentação pessoal
                 -->
-                    <h1><span class="destaque">Apresentação:</span></h1>
-                    <p>
-                    Sou profissional de informática, com 20 anos de experiência. Minhas áreas de atuação são, preferencialmente, o suporte e a programação, sendo a primeira onde tenho a maior expertise.<br/>
-                    </p>
-                    <p>
-                    Sou formado em Tecnologia em informática e no decorrer da minha jornada profissional tive a oportunidade de atuar em empresas como Itautec, Stefanini, UniverCidade e ABBR, nas quais pude adquirir sólidos conhecimentos.<br/>
-                    </p>
-                    <p>
-                    Meu objetivo é executar um trabalho de qualidade e excelência, agregando valor à empresa e aos serviços prestados aos clientes.
-                    </p>
-                    <a href="#topo">Topo</a>
+                    <h1><span class="negrito italico fs14">Apresentação:</span></h1>
+                    <span class="fs8">
+                        <p>
+                        Sou profissional de informática, com 20 anos de experiência. Minhas áreas de atuação são, preferencialmente, o suporte e a programação, sendo a primeira onde tenho a maior expertise.<br/>
+                        </p>
+                        <p>
+                        Sou formado em Tecnologia em informática e no decorrer da minha jornada profissional tive a oportunidade de atuar em empresas como Itautec, Stefanini, UniverCidade e ABBR, nas quais pude adquirir sólidos conhecimentos.<br/>
+                        </p>
+                        <p>
+                        Meu objetivo é executar um trabalho de qualidade e excelência, agregando valor à empresa e aos serviços prestados aos clientes.
+                        </p>
+                        <a href="#topo">Topo</a>
+                    </span>
             </div>
             <div id="dds" name="dados">
                 <img src="files/imgs/helton_3x4_peq.png" id="foto3x4" alt="Minha foto 3x4">
@@ -137,6 +164,19 @@
                 <br/>
                 <a href="#topo">Topo</a>
             </div>
-        </div>
+        </main>
+        <footer class="centro">
+            <hr>
+            <br/>
+            <span class="fs6">
+                A versão resumida do meu currículo para impressão pode ser baixada em PDF <a href="files/CV_HeltonBValim.pdf" target="_blank">clicando aqui</a>.<br/>
+                Para conhecer meu repositório no gitHub <a href="https://github.com/HeltonBValim" target="_blank">clique aqui</a>
+            </span>.
+            <!--
+            Verificar:    
+            1. O arquivo PDF foi retirado da pasta original e renomeado em LowerCase pois o Github estava mostrando erro 404 ao clicar no link.
+            2. Adicionar um contador de visitas.
+            -->
+        </footer>
     </body>
 </html>
