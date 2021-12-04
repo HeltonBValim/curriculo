@@ -13,14 +13,15 @@ body {
     font-size: 16px;
 }
 aside {
-    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden;
     grid-area: aside;
 }
 header {
     grid-area: header;
-    /* background-color: aqua; */
+    background-color: aqua;
 }
 main {
     /* background: url("../files/imgs/logos/hbvtec.png");
@@ -42,7 +43,7 @@ main {
     }
 footer {
     grid-area: footer;
-    /* background-color: yellow; */
+    background-color: yellow;
 }
 /*Formatações gerais*/
 hr {
@@ -119,7 +120,6 @@ nav#menu {
         color: rgba(255,255,255,1);
         text-decoration: underline;
     }
-/*Imagens*/
 .icone {
     height: 1em;
     width: 1em;
@@ -159,7 +159,7 @@ img#foto3x4 {
 
 @media screen and (max-width:767px) {
 aside {
-    background: url("../files/imgs/cv_h.png");
+    background-image: url("../files/imgs/cv_h.png");
 }
 .embalagem {
     display: grid;
@@ -174,7 +174,7 @@ aside {
 }
 @media screen and (min-width:768px) and (max-width:1023px) {
 aside {
-    background: url("../files/imgs/cv_h.png");
+    background-image: url("../files/imgs/cv_h.png");
 }
 .embalagem {
     display: grid;
@@ -189,12 +189,12 @@ aside {
 }
 @media screen and (min-width:1024px) {
 aside {
-    background: url("../files/imgs/cv_v.png");
+    background-image: url("../files/imgs/cv_v.png");
 }
 .embalagem {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 25vh 55vh 14vh;
+    grid-template-rows: 25vh 55vh 12vh;
     gap: 1vh;
     grid-template-areas: "aside header"
                          "aside main"
