@@ -4,49 +4,83 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="css/padrao.css" />
-        <title>Meu currículo</title>
+        <title>Curriculum Vitae - Helton B. Valim</title>
     </head>
-    <body id="principal">
+    <body>
         <!--
             @Autor : HeltonBValim
             Currículo Vitae
             Página principal - estrutura
         -->
-        <div id="interface" class="embalagem">
-            <aside>
-                <!--O aside está com uma imagem no background
-                para melhor distribuição e centralização da mesma-->
+        <div class="caixa">
+            <aside id="logosite">
+                <table id="imgfundo">
+                    <tr>
+                        <td></td>
+                    </tr>
+                </table>
             </aside>
-            <header>
+            <header id="cabecalho">
+                <!-- <table id="conteudo">
+                    <tr>
+                        <td> -->
                 <hgroup id="titulo" class="centro">
                     <h1><span class="fs14">Helton Braga Valim</span><h1>
-                    <h6><span class="fs6">Última atualização: 28/11/2021.</span></h6>
+                    <h6><span class="fs6">Última atualização: 05/12/2021.</span></h6>
                 </hgroup>
-                <hr>
+                        <!-- </td>
+                    </tr>
+                    <tr>
+                        <td> -->
+                            <hr>
+                        <!-- </td>
+                    </tr>
+                    <tr>
+                        <td> -->
                 <nav id="menu" name="topo" class="centro">
                     <span class="invisivel">Menu Principal</span>
                     <ul class="fs6">
-                        <li><a href="apresentacao.html" target="tPartes"><img id="home" class="icone" src="files/imgs/home.png"></a>
-                        <li><a href="dados.html" target="tPartes">Dados Pessoais</a>
-                        <li><a href="formacao.html" target="tPartes">Formação</a>
-                        <li><a href="experiencia.html" target="tPartes">Experiências</a>
-                        <li><a href="cursos.html" target="tPartes">Cursos</a>
-                        <li><a href="complemento.html" target="tPartes">Complemento</a>
-                        <li><a href="perfil.html" target="tPartes">Perfil</a>
+                        <li><a href="apresentacao.html" target="texto"><img id="home" class="icone" src="files/imgs/home.png"></a>
+                        <li><a href="dados.html" target="texto">Dados Pessoais</a>
+                        <li><a href="formacao.html" target="texto">Formação</a>
+                        <li><a href="experiencia.html" target="texto">Experiências</a>
+                        <li><a href="cursos.html" target="texto">Cursos</a>
+                        <li><a href="complemento.html" target="texto">Complemento</a>
+                        <li><a href="perfil.html" target="texto">Perfil</a>
                     </ul>
                 </nav>
-                <hr>
+                        <!-- </td>
+                    </tr>
+                    <tr>
+                        <td> -->
+                            <hr>
+                        <!-- </td>
+                    </tr>
+                </table> -->
             </header>
-            <main id="conteudo">
-                <iframe name="tPartes" id="cPartes" src="apresentacao.html"></iframe>
+            <main id="corpo">
+                <table id="conteudo">
+                    <tr>
+                        <td>
+                            <iframe name="texto" src="apresentacao.html"></iframe>
+                        </td>
+                    </tr>
+                </table>
             </main>
-            <footer class="centro">
-                <hr>
-                <br/>
-                <span class="fs6">
-                    A versão resumida do meu currículo para impressão pode ser baixada em PDF <a href="files/CV_HeltonBValim.pdf" target="_blank">clicando aqui</a>.<br/>
-                    Para conhecer meu repositório no gitHub <a href="https://github.com/HeltonBValim" target="_blank">clique aqui</a>
-                </span>.
+            <footer id="rodape" class="centro">
+                <table id="conteudo">
+                    <tr>
+                        <td>
+                            <hr>
+                            <br/>
+                            <span class="fs6">
+                                A versão resumida do meu currículo para impressão pode ser baixada em PDF <a href="files/CV_HeltonBValim.pdf" target="_blank">clicando aqui</a>.<br/>
+                                Para conhecer meu repositório no gitHub <a href="https://github.com/HeltonBValim" target="_blank">clique aqui</a>.
+                            </span>
+                        </td>
+                    </tr>
+                </table>                
+                <br/>                
                 <!--
                 Verificar:    
                 1. O arquivo PDF foi retirado da pasta original e renomeado em LowerCase pois o Github estava mostrando erro 404 ao clicar no link.

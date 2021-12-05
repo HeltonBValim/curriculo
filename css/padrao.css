@@ -1,202 +1,255 @@
 @charset "UTF-8";
 /*@Autor : HeltonBValim*/
-html#base {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: rgb(0, 0, 0);
-}
-body {
-    margin: .5em;
-    padding: .5em;
-    background-color: rgb(255, 255, 255);
-    font-size: 16px;
-}
-aside {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    grid-area: aside;
-}
-header {
-    grid-area: header;
-    background-color: aqua;
-}
-main {
-    /* background: url("../files/imgs/logos/hbvtec.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: 22vh;
-    background-color: rgba(255, 255, 255, 0.8);
-    background-blend-mode: lighten; */
-    display: flex;
-    flex-direction: column;
-    grid-area: main;
-}
-    iframe {
-        height: 100%;
-        width: 100%;
-        border: none;
-        /* opacity: 0; 0: transparente até 1: opaco */
-    }
-footer {
-    grid-area: footer;
-    background-color: yellow;
-}
-/*Formatações gerais*/
-hr {
-    height: .1em;
-    max-width: 100%;
-    margin: 0px;
-    padding: 0px;
-}
-p{
-    text-align: justify;
-    text-indent: 5em;
-}
-ul {
-    list-style-type: disc;
-}
-ul.nivel1 {
-    list-style-type: circle;
-}
-.invisivel {
-    display: none;
-}
-.direita {
-    text-align: right;
-}
-.centro {
-    text-align: center;
-}
-.negrito {
-    font-weight: bold;
-}
-.italico {
-    font-style: italic;
-}
-hgroup#titulo h1 {
-    text-align: center;
-    margin: .5em 0 .5em 0;
-    padding: 0;
-}
-hgroup#titulo h6 {
-    text-align: right;
-    color: #606060;
-    margin: 0 2.5em .5em 0;
-    padding: 0;
-}
-/*Menu*/
-nav#menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-}
-    nav#menu ul {
-        display: flex;
-        flex-direction: row;
-        list-style: none;
-        text-transform: uppercase;
-    }
-    nav#menu li {
-        font-weight: bolder;
-        transition: background-color 0.5s;
-        margin: .2em;
-        padding: 0 .5em 0 .5em;
-    }
-    nav#menu li:hover {
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-    nav#menu a {
-        text-decoration: none;
-        color: rgba(0,0,0,1);
-    }
-    nav#menu a:hover {
-        color: rgba(255,255,255,1);
-        text-decoration: underline;
-    }
-.icone {
-    height: 1em;
-    width: 1em;
-}
-img#foto3x4 {
-    display: block;
-    position: absolute;
-    right: 1em;
-}
-.fs4 { font-size: calc(4px + 0.4vw) }
-.fs5 { font-size: calc(5px + 0.5vw) }
-.fs6 { font-size: calc(6px + 0.6vw) }
-.fs7 { font-size: calc(7px + 0.7vw) }
-.fs8 { font-size: calc(8px + 0.8vw) }
-.fs9 { font-size: calc(9px + 0.9vw) }
-.fs10 { font-size: calc(10px + 1vw) }
-.fs11 { font-size: calc(11px + 1.1vw) }
-.fs12 { font-size: calc(12px + 1.2vw) }
-.fs13 { font-size: calc(13px + 1.3vw) }
-.fs14 { font-size: calc(14px + 1.4vw) }
-.fs15 { font-size: calc(15px + 1.5vw) }
-.fs16 { font-size: calc(16px + 1.6vw) }
-.fs17 { font-size: calc(17px + 1.7vw) }
-.fs18 { font-size: calc(18px + 1.8vw) }
-.fs19 { font-size: calc(19px + 1.9vw) }
-.fs20 { font-size: calc(20px + 2vw) }
-.fs21 { font-size: calc(21px + 2.1vw) }
-.fs22 { font-size: calc(22px + 2.2vw) }
-.fs23 { font-size: calc(23px + 2.3vw) }
-.fs24 { font-size: calc(24px + 2.4vw) }
-.fs25 { font-size: calc(25px + 2.5vw) }
-.fs26 { font-size: calc(26px + 2.6vw) }
-.fs27 { font-size: calc(27px + 2.7vw) }
-.fs28 { font-size: calc(28px + 2.8vw) }
-.fs29 { font-size: calc(29px + 2.9vw) }
-.fs30 { font-size: calc(30px + 3vw) }
+/*Geral*/
+    html#base {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgb(0, 0, 0);
+        }
+        body {
+            margin: .5em;
+            padding: .5em;
+            background-color: rgb(255, 255, 255);
+            font-size: 16px;
+        }
+            hr {
+                height: .1em;
+                max-width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            p{
+                text-align: justify;
+                text-indent: 5em;
+            }
+            ul {
+                list-style-type: disc;
+            }
+                ul.nivel1 {
+                    list-style-type: circle;
+                }
+                li {
+                    align-items: center;
+                }
+            /* .identar {
+                text-indent: 5em;
+            } */
+            .invisivel {
+                display: none;
+            }
+            .direita {
+                text-align: right;
+            }
+            .centro {
+                text-align: center;
+            }
+            .negrito {
+                font-weight: bold;
+            }
+            .italico {
+                font-style: italic;
+            }
+                /*Fontes redimensionáveis*/
+                    .fs4 { font-size: calc(4px + 0.4vw) }
+                    .fs5 { font-size: calc(5px + 0.5vw) }
+                    .fs6 { font-size: calc(6px + 0.6vw) }
+                    .fs7 { font-size: calc(7px + 0.7vw) }
+                    .fs8 { font-size: calc(8px + 0.8vw) }
+                    .fs9 { font-size: calc(9px + 0.9vw) }
+                    .fs10 { font-size: calc(10px + 1vw) }
+                    .fs11 { font-size: calc(11px + 1.1vw) }
+                    .fs12 { font-size: calc(12px + 1.2vw) }
+                    .fs13 { font-size: calc(13px + 1.3vw) }
+                    .fs14 { font-size: calc(14px + 1.4vw) }
+                    .fs15 { font-size: calc(15px + 1.5vw) }
+                    .fs16 { font-size: calc(16px + 1.6vw) }
+                    .fs17 { font-size: calc(17px + 1.7vw) }
+                    .fs18 { font-size: calc(18px + 1.8vw) }
+                    .fs19 { font-size: calc(19px + 1.9vw) }
+                    .fs20 { font-size: calc(20px + 2vw) }
+                    .fs21 { font-size: calc(21px + 2.1vw) }
+                    .fs22 { font-size: calc(22px + 2.2vw) }
+                    .fs23 { font-size: calc(23px + 2.3vw) }
+                    .fs24 { font-size: calc(24px + 2.4vw) }
+                    .fs25 { font-size: calc(25px + 2.5vw) }
+                    .fs26 { font-size: calc(26px + 2.6vw) }
+                    .fs27 { font-size: calc(27px + 2.7vw) }
+                    .fs28 { font-size: calc(28px + 2.8vw) }
+                    .fs29 { font-size: calc(29px + 2.9vw) }
+                    .fs30 { font-size: calc(30px + 3vw) }
+                /**/
+/**/
 
-@media screen and (max-width:767px) {
-aside {
-    background-image: url("../files/imgs/cv_h.png");
-}
-.embalagem {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 25vh 55vh 14vh;
-    gap: .1vh;
-    grid-template-areas: "aside"
-                         "header"
-                         "main"
-                         "footer";
-}
-}
-@media screen and (min-width:768px) and (max-width:1023px) {
-aside {
-    background-image: url("../files/imgs/cv_h.png");
-}
-.embalagem {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15vh 25vh 55vh 14vh;
-    gap: .5vh;
-    grid-template-areas: "aside"
-                         "header"
-                         "main"
-                         "footer";
-}
-}
-@media screen and (min-width:1024px) {
-aside {
-    background-image: url("../files/imgs/cv_v.png");
-}
-.embalagem {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 25vh 55vh 12vh;
-    gap: 1vh;
-    grid-template-areas: "aside header"
-                         "aside main"
-                         "aside footer";
-}
+/*Logo do site*/
+    aside#logosite {
+        grid-area: aside;
+        background-color: #00ffff;
+    }
+    #imgfundo {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        overflow: visible;
+        width: 100%;
+        height: 100%;
+        border: 1px solid rgb(255, 238, 0);
+    }
+/**/
+
+/*Cabecalho*/
+    header {
+        grid-area: header;
+        /* background-color: rgb(255, 0, 221); */
+    }
+    hgroup#titulo h1 {
+        text-align: center;
+        margin: .5em 0 .5em 0;
+        padding: 0;
+    }
+    hgroup#titulo h6 {
+        text-align: right;
+        color: #606060;
+        margin: 0 2.5em .5em 0;
+        padding: 0;
+    }
+    /*Menu*/
+        nav#menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+            nav#menu ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                text-transform: uppercase;
+            }
+            nav#menu li {
+                font-weight: bolder;
+                transition: background-color 0.5s;
+                margin: auto;
+                padding: .3em .5em .3em .5em;
+            }
+                nav#menu li:hover {
+                    background-color: rgba(0, 0, 0, 0.3);
+                }
+            nav#menu a {
+                text-decoration: none;
+                color: rgba(0,0,0,1);
+            }
+                nav#menu a:hover {
+                    color: rgba(255,255,255,1);
+                    text-decoration: underline;
+                }
+    /**/
+/**/
+
+/*Corpo do site*/
+    #conteudo {
+        width: 100%;
+        height: 100%;
+        /* border: .5px solid black; */
+    }
+    #conteudo td{
+        width: 100%;
+        height: 33%;
+        /* border: .5px solid black; */
+    }
+    main {
+        /* background: url("../files/imgs/logos/hbvtec.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: 22vh;
+        background-color: rgba(255, 255, 255, 0.8);
+        background-blend-mode: lighten; */
+        /* background-color: #606060; */
+        display: flex;
+        flex-direction: column;
+        grid-area: main;
+    }
+        iframe {
+            height: 100%;
+            width: 100%;
+            padding: auto;
+            margin: auto;
+            border: none;
+            /* border: 2px solid rgb(233, 93, 0); */
+        }
+/**/
+
+/*Rodapé*/
+    footer {
+        grid-area: footer;
+        /* background-color: rgb(255, 0, 0); */
+    }
+/**/
+
+/*Tratamento das imagens diretas*/
+    .icone {
+        height: 1em;
+        width: 1em;
+    }
+    img#foto3x4 {
+        display: block;
+        position: fixed;
+        width: 10%;
+        right: 1em;
+        border: .1px solid #000000;
+    }
+/**/
+
+/*Layout de telas*/
+    @media screen and (max-width:767px) {
+        .caixa {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 15vh 25vh 55vh 14vh;
+            gap: .2vh;
+            grid-template-areas: "aside"
+                                 "header"
+                                 "main"
+                                 "footer";
+        }
+        #imgfundo {
+            background-image: url(../files/imgs/cv_h.png);
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        .caixa {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 15vh 25vh 55vh 14vh;
+            gap: .3vh;
+            grid-template-areas: "aside"
+                                 "header"
+                                 "main"
+                                 "footer";
+        }
+        #imgfundo {
+            background-image: url(../files/imgs/cv_h.png);
+        }
+    }
+    @media screen and (min-width:1024px) {
+        .caixa {
+            display: grid;
+            /* grid-template-columns: 1fr 5fr; */
+            grid-template-columns: 15% 85%;
+            grid-template-rows: 29vh 50vh 14vh;
+            gap: .3vh;
+            align-items: stretch;
+            justify-items: stretch;
+            grid-template-areas: "aside header"
+                                 "aside main"
+                                 "aside footer";
+        }
+        #imgfundo {
+            background-image: url(../files/imgs/cv_v.png);
+        }
+    }
+/**/
