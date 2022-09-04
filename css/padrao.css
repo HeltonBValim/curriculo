@@ -1,90 +1,102 @@
 @charset "UTF-8";
 /*@Autor : HeltonBValim*/
 /*Geral*/
-    * {
-        margin: 0;
-        padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+/* html {
+    box-sizing: border-box;
+    background-color: rgb(2, 166, 241);
+} */
+    body {
+        margin: .5em;
+        padding: .5em;
+        /* background-color: rgb(255, 238, 6); */
+        font-size: 16px;
     }
-    html#base {
-        box-sizing: border-box;
-        background-color: rgb(0, 0, 0);
+        hr {
+            height: .1em;
+            max-width: 100%;
+            margin: 0px;
+            padding: 0px;
         }
-        body {
-            margin: .5em;
-            padding: .5em;
-            background-color: rgb(255, 255, 255);
-            font-size: 16px;
+        p{
+            text-align: justify;
         }
-            hr {
-                height: .1em;
-                max-width: 100%;
-                margin: 0px;
-                padding: 0px;
+        .identar {
+            text-indent: 5em;
+        }
+        ul {
+            list-style-type: disc;
+        }
+            ul.nivel1 {
+                list-style-type: circle;
             }
-            p{
-                text-align: justify;
-                text-indent: 5em;
+            li {
+                align-items: center;
             }
-            ul {
-                list-style-type: disc;
-            }
-                ul.nivel1 {
-                    list-style-type: circle;
-                }
-                li {
-                    align-items: center;
-                }
-            /* .identar {
-                text-indent: 5em;
-            } */
-            .invisivel {
-                display: none;
-            }
-            .direita {
-                text-align: right;
-            }
-            .centro {
-                text-align: center;
-            }
-            .negrito {
-                font-weight: bold;
-            }
-            .italico {
-                font-style: italic;
-            }
-                /*Fontes redimensionáveis*/
-                    .fs4 { font-size: calc(4px + 0.4vw) }
-                    .fs5 { font-size: calc(5px + 0.5vw) }
-                    .fs6 { font-size: calc(6px + 0.6vw) }
-                    .fs7 { font-size: calc(7px + 0.7vw) }
-                    .fs8 { font-size: calc(8px + 0.8vw) }
-                    .fs9 { font-size: calc(9px + 0.9vw) }
-                    .fs10 { font-size: calc(10px + 1vw) }
-                    .fs11 { font-size: calc(11px + 1.1vw) }
-                    .fs12 { font-size: calc(12px + 1.2vw) }
-                    .fs13 { font-size: calc(13px + 1.3vw) }
-                    .fs14 { font-size: calc(14px + 1.4vw) }
-                    .fs15 { font-size: calc(15px + 1.5vw) }
-                    .fs16 { font-size: calc(16px + 1.6vw) }
-                    .fs17 { font-size: calc(17px + 1.7vw) }
-                    .fs18 { font-size: calc(18px + 1.8vw) }
-                    .fs19 { font-size: calc(19px + 1.9vw) }
-                    .fs20 { font-size: calc(20px + 2vw) }
-                    .fs21 { font-size: calc(21px + 2.1vw) }
-                    .fs22 { font-size: calc(22px + 2.2vw) }
-                    .fs23 { font-size: calc(23px + 2.3vw) }
-                    .fs24 { font-size: calc(24px + 2.4vw) }
-                    .fs25 { font-size: calc(25px + 2.5vw) }
-                    .fs26 { font-size: calc(26px + 2.6vw) }
-                    .fs27 { font-size: calc(27px + 2.7vw) }
-                    .fs28 { font-size: calc(28px + 2.8vw) }
-                    .fs29 { font-size: calc(29px + 2.9vw) }
-                    .fs30 { font-size: calc(30px + 3vw) }
-                /**/
+        .invisivel {
+            display: none;
+        }
+        .ajuste1 {
+            margin-left: 1em;
+        }
+        .ajuste2 {
+            margin-left: 2em;
+        }
+        .direita {
+            text-align: right;
+        }
+        .esquerda {
+            text-align: left;
+        }
+        .centro {
+            text-align: center;
+            align-items: center;
+        }
+        .justificado {
+            text-align: justify;
+        }
+        .negrito {
+            font-weight: bold;
+        }
+        .italico {
+            font-style: italic;
+        }
+        /*Fontes redimensionáveis*/
+            .fs4 { font-size: calc(4px + 0.4vw) }
+            .fs5 { font-size: calc(5px + 0.5vw) }
+            .fs6 { font-size: calc(6px + 0.6vw) }
+            .fs7 { font-size: calc(7px + 0.7vw) }
+            .fs8 { font-size: calc(8px + 0.8vw) }
+            .fs9 { font-size: calc(9px + 0.9vw) }
+            .fs10 { font-size: calc(10px + 1vw) }
+            .fs11 { font-size: calc(11px + 1.1vw) }
+            .fs12 { font-size: calc(12px + 1.2vw) }
+            .fs13 { font-size: calc(13px + 1.3vw) }
+            .fs14 { font-size: calc(14px + 1.4vw) }
+            .fs15 { font-size: calc(15px + 1.5vw) }
+            .fs16 { font-size: calc(16px + 1.6vw) }
+            .fs17 { font-size: calc(17px + 1.7vw) }
+            .fs18 { font-size: calc(18px + 1.8vw) }
+            .fs19 { font-size: calc(19px + 1.9vw) }
+            .fs20 { font-size: calc(20px + 2vw) }
+            .fs21 { font-size: calc(21px + 2.1vw) }
+            .fs22 { font-size: calc(22px + 2.2vw) }
+            .fs23 { font-size: calc(23px + 2.3vw) }
+            .fs24 { font-size: calc(24px + 2.4vw) }
+            .fs25 { font-size: calc(25px + 2.5vw) }
+            .fs26 { font-size: calc(26px + 2.6vw) }
+            .fs27 { font-size: calc(27px + 2.7vw) }
+            .fs28 { font-size: calc(28px + 2.8vw) }
+            .fs29 { font-size: calc(29px + 2.9vw) }
+            .fs30 { font-size: calc(30px + 3vw) }
+        /**/
 /**/
 
 /*Imagens do site*/
-    aside#logosite {
+    aside.logosite {
         grid-area: aside;
         background-color: #00ffff;
     }
@@ -95,7 +107,7 @@
         overflow: visible;
         width: 100%;
         height: 100%;
-        border: 1px solid rgb(0, 0, 0);
+        /* border: 1px solid rgb(0, 0, 0); */
     }
     /*Tratamento das imagens diretas*/
         .icone {
@@ -115,7 +127,7 @@
 /*Cabecalho*/
     header {
         grid-area: header;
-        background-color: rgb(255, 0, 221);
+        /* background-color: rgb(255, 0, 221); */
     }
     hgroup#titulo h1 {
         text-align: center;
@@ -149,7 +161,7 @@
                 flex-wrap: wrap;
                 font-weight: bolder;
                 transition: background-color 0.5s;
-                margin: auto;
+                /* margin: auto; */
                 padding: .3em .5em .3em .5em;
             }
                 nav#menu li:hover {
@@ -167,17 +179,6 @@
 /**/
 
 /*Corpo do site*/
-    /* #conteudo {
-        width: 95%;
-        height: 100%;
-        border: .5px solid black;
-    }
-    #conteudo td{
-        width: 100%;
-        height: 33%;
-        align: center;
-        /* border: .5px solid black; */
-    } */
     main {
         /* background: url("../files/imgs/logos/hbvtec.png");
         background-repeat: no-repeat;
@@ -185,32 +186,28 @@
         background-attachment: fixed;
         background-size: 22vh;
         background-color: rgba(255, 255, 255, 0.8);
-        background-blend-mode: lighten; */
-        vertical-align: middle;
-        background-color: #606060;
+        background-blend-mode: lighten;
+        background-color: #f30202;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; */
         grid-area: main;
     }
     main > div {
-        align: center;
         height: 100%;
         width: 100%;
+        /* background-color: #f302ab; */
     }
-        iframe {
-            height: 100%;
-            width: 100%;
-            padding: auto;
-            margin: auto;
-            /* border: none; */
-            border: .1px solid rgb(233, 93, 0);
-        }
+     iframe {
+        height: 100%;
+        width: 98%;
+        border: none;
+     }
 /**/
 
 /*Rodapé*/
     footer {
         grid-area: footer;
-        background-color: rgb(255, 0, 0);
+        /* background-color: rgb(255, 0, 0); */
     }
 /**/
 
@@ -222,7 +219,7 @@
         .caixa {
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 15vh 25vh 55vh 14vh;
+            grid-template-rows: 15vh 30vh 55vh 20vh;
             gap: .2vh;
             grid-template-areas: "aside"
                                  "header"
