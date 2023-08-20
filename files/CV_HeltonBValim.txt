@@ -1,0 +1,51 @@
+** Dados Pessoais
+> Casado		Naturalidade: Rio de Janeiro
+> Endereço: Rua Vereador João Acir Cipriano, 76 Apt. 202 – Nossa Senhora de Fátima – Penha – SC – 88385-000.
+> Telefone: (47) 99672-1728 Tim/Zap (Marcilene); (48) 99938-3806 Tim
+> E-mail: helton74@gmail.com		CNH “B” .:. EAR
+
+** Formação Acadêmica
+> Nível Superior: Tecnologia em Informática
+  UniverCidade
+
+** Experiência Profissional
+> Triplex Vidros de Segurança LTDA - UNIVIDROS
+Função: Vidraceiro4/Expedidor .:. Efetuar a conferência de mercadorias tanto no ato da entrega quanto no ato do recebimento, efetuando a devida baixa em sistema apropriado, disponibilizado pela empresa. Auxiliar no processo de produção de peças de vidro em seus diferentes estágios .:. De 11/01/2021 à 31/03/2023. Motivo da saída: Mudança de endereço para Penha/SC.
+> WR2 Sistemas
+Função: Assistente de Apoio ao Usuário III .:. Auxiliar no desenvolvimento de software ERP e de automação comercial - para o setor de Comunicação Visual, reportando eventuais falhas e sugestões de melhorias e prestando suporte remoto para os clientes .:. De 08/10/2018 à 05/06/2020. Motivo da saída: Crise econômica do COVID-19.
+> Guloseimas da Rodoviária
+Função: Assistente Administrativo .:. Prover a manutenção dos equipamentos de informática e sua rede. Administrar o sistema de automação comercial. Prestar suporte para os usuários e clientes. Auxiliar nas rotinas de RH/DP e de serviços bancários .:. De 01/05/2017 à 13/04/2018. Motivo da saída: Mudança de endereço para Tubarão/SC.
+
+** Cursos
+> Sala Vip Informática: 
+  - Computação Gráfica (Corel, Photoshop e Pagemaker) .
+> Centro Universitário da Cidade (UniverCidade): 
+  - Microsoft  Windows 2000 – Network and Operating System Essentials (2151A);
+  - Implementing Microsoft Windows 2000 Professional and Server(2152A).
+> NSI Training Tecnologia: 
+  - 2147B – Gerenciando um Ambiente Microsoft Windows Server 2003;
+  - 2165B – Mantendo um Ambiente Microsoft Windows Server 2003 .
+> Allen Informática: 
+  - MS 4994 – Introdução a programação .NET com Visual Studio 2005.
+> Render Multimidia (On-line): 
+  - Aprendendo Autocad 2010 2D e 3D.
+> Cursoemvideo.com (On-line): 
+  - HTML5;
+  - PHP Básico;
+  - PHP com orientação à objetos;
+  - Git e GitHub;
+  - Raspberry PI básico;
+  - MySQL.
+
+** Informações Complementares
+> Windows 2000, XP, Seven e Pacotes Office (MS-Office, BR-Office e Open-Office);
+> Internet e Assistência remota;
+> Inglês Básico;
+> Rotinas de RH e DP;
+> Conhecimentos em Delphi e Banco de dados Postgres, Firebird, Oracle e SQL Server.
+
+** Perfil Profissional
+   Responsável, paciente e atento a detalhes. Fácil adaptação à  mudanças. Bom relacionamento interpessoal, apto para trabalhar em equipe e com atendimento ao público.
+
+** Uma versão mais ampla destas informações pode ser vista em:
+   https://heltonbvalim.github.io/curriculo/
