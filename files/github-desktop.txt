@@ -1,0 +1,118 @@
+https://github.com/shiftkey/desktop?tab=readme-ov-file
+
+>>> Installation via package manager
+You can use your operating system's package manager to install github-desktop and keep it up to date on Debian and RPM-based distributions.
+
+Debian/Ubuntu
+There are two APT package feeds available, both hosted in the US. You only need to add one or the other here, as both of these are generated based on the releases from this repository.
+
+@shiftkey package feed
+wget -qO - https://apt.packages.shiftkey.dev/gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/shiftkey-packages.gpg > /dev/null
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/shiftkey-packages.gpg] https://apt.packages.shiftkey.dev/ubuntu/ any main" > /etc/apt/sources.list.d/shiftkey-packages.list'
+@mwt package feed
+wget -qO - https://mirror.mwt.me/shiftkey-desktop/gpgkey | gpg --dearmor | sudo tee /usr/share/keyrings/mwt-desktop.gpg > /dev/null
+sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/mwt-desktop.gpg] https://mirror.mwt.me/shiftkey-desktop/deb/ any main" > /etc/apt/sources.list.d/mwt-desktop.list'
+Installation
+Once you have a feed configured, run this command to install the application:
+
+sudo apt update && sudo apt install github-desktop
+Red Hat/CentOS/Fedora
+There are two RPM package feeds available, both hosted in the US. You only need to add one or the other here, as both of these are generated based on the releases from this repository.
+
+@shiftkey package feed
+sudo rpm --import https://rpm.packages.shiftkey.dev/gpg.key
+sudo sh -c 'echo -e "[shiftkey-packages]\nname=GitHub Desktop\nbaseurl=https://rpm.packages.shiftkey.dev/rpm/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://rpm.packages.shiftkey.dev/gpg.key" > /etc/yum.repos.d/shiftkey-packages.repo'
+@mwt package feed
+sudo rpm --import https://mirror.mwt.me/shiftkey-desktop/gpgkey
+sudo sh -c 'echo -e "[mwt-packages]\nname=GitHub Desktop\nbaseurl=https://mirror.mwt.me/shiftkey-desktop/rpm\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://mirror.mwt.me/shiftkey-desktop/gpgkey" > /etc/yum.repos.d/mwt-packages.repo'
+Installation
+Once you have a feed configured, run this command to install the application:
+
+# if yum is your package manager
+sudo yum install github-desktop
+
+# if dnf is your package manager
+sudo dnf install github-desktop
+
+# if zypper is your package manager
+sudo zypper ref && sudo zypper in github-desktop
+OpenSUSE
+There are two RPM package feeds available, both hosted in the US. You only need to add one or the other here, as both of these are generated based on the releases from this repository.
+
+@shiftkey package feed
+sudo rpm --import https://rpm.packages.shiftkey.dev/gpg.key
+sudo sh -c 'echo -e "[shiftkey-packages]\nname=GitHub Desktop\nbaseurl=https://rpm.packages.shiftkey.dev/rpm/\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://rpm.packages.shiftkey.dev/gpg.key" > /etc/zypp/repos.d/shiftkey-packages.repo'
+@mwt package feed
+sudo rpm --import https://mirror.mwt.me/shiftkey-desktop/gpgkey
+sudo sh -c 'echo -e "[mwt-packages]\nname=GitHub Desktop\nbaseurl=https://mirror.mwt.me/shiftkey-desktop/rpm\nenabled=1\ngpgcheck=1\nrepo_gpgcheck=1\ngpgkey=https://mirror.mwt.me/shiftkey-desktop/gpgkey" > /etc/zypp/repos.d/mwt-packages.repo'
+Installation
+sudo zypper ref && sudo zypper in github-desktop
+Other Distributions
+Arch Linux
+Arch Linux users can install GitHub Desktop from the AUR.
+
+gnome-keyring is required and the daemon must be launched either at login or when the X server is started. Normally this is handled by a display manager, but in other cases following the instructions found on the Arch Wiki will fix the issue of not being able to save login credentials.
+
+Cross-Distribution Packages
+GitHub Desktop is also available cross-platform as a Flatpak and AppImage.
+
+deb-get
+Debian/Ubuntu users can also install directly from this repository using deb-get: deb-get install github-desktop.
+
+Known issues
+If you're having troubles with Desktop, please refer to the Known issues document for guidance and workarounds for common limitations.
+
+If your package manager is still trying to reach PackageCloud, refer to the cleanup instructions for details about migrating away.
+
+More information
+Please check out the README on the upstream GitHub Desktop project and desktop.github.com for more product-oriented information about GitHub Desktop.
+
+See our getting started documentation for more information on how to set up, authenticate, and configure GitHub Desktop.
+
+License
+MIT
+
+The MIT license grant is not for GitHub's trademarks, which include the logo designs. GitHub reserves all trademark and copyright rights in and to all GitHub trademarks. GitHub's logos include, for instance, the stylized Invertocat designs that include "logo" in the file title in the following folder: logos.
+
+GitHub® and its stylized versions and the Invertocat mark are GitHub's Trademarks or registered Trademarks. When using GitHub's logos, be sure to follow the GitHub logo guidelines.
+
+
+>>> Download for Linux and Unix
+It is easiest to install Git on Linux using the preferred package manager of your Linux distribution. If you prefer to build from source, you can find tarballs on kernel.org. The latest version is 2.48.1
+
+Debian/Ubuntu
+For the latest stable version for your release of Debian/Ubuntu
+
+# apt-get install git
+For Ubuntu, this PPA provides the latest stable upstream Git version
+
+# add-apt-repository ppa:git-core/ppa
+# apt update; apt install git
+Fedora
+# yum install git (up to Fedora 21)
+# dnf install git (Fedora 22 and later)
+Gentoo
+# emerge --ask --verbose dev-vcs/git
+Arch Linux
+# pacman -S git
+openSUSE
+# zypper install git
+Mageia
+# urpmi git
+Nix/NixOS
+# nix-env -i git
+FreeBSD
+# pkg install git
+Solaris 9/10/11 (OpenCSW)
+# pkgutil -i git
+Solaris 11 Express, OpenIndiana
+# pkg install developer/versioning/git
+OpenBSD
+# pkg_add git
+Alpine
+$ apk add git
+Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.
+RHEL and derivatives typically ship older versions of git. You can download a tarball and build from source, or use a 3rd-party repository such as the IUS Community Project to obtain a more recent version of git.
+
+Slitaz
+$ tazpkg get-install git
