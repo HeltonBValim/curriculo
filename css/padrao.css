@@ -110,10 +110,13 @@
 		/* border: 1px solid rgb(0, 0, 0); */
 	}
 	#certificado {
-		width: 1.5;
-		height: 1em;
-		vertical-align: middle;
+		width: 3;
+		height: 2em;
+		vertical-align: bottom;
 	}
+    #ComputacaoGrafica::backdrop{
+        background: rgba(0, 0, 0, 0.8);
+    }
 	/*Tratamento das imagens diretas*/
 		.icone {
 		    height: 1em;
