@@ -110,16 +110,15 @@
 		/* border: 1px solid rgb(0, 0, 0); */
 	}
 	#certificado {
-		width: 1.5em;
+        width: 1.5em;
 		height: 1em;
-		vertical-align: bottom;
+		vertical-align: center;
 	}
     #certval {
-        width: 50em;
-        height: 100em;
+        width: 60%;
     }
     #diagramacao::backdrop{
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.2);
         display: block;
     }
 	/*Tratamento das imagens diretas*/
