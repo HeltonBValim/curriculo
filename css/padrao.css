@@ -10,8 +10,8 @@
     background-color: rgb(2, 166, 241);
 } */
     body {
-        margin: .5em;
-        padding: .5em;
+        margin: .2em;
+        padding: .2em;
         /* background-color: rgb(255, 238, 6); */
         font-size: 16px;
     }
@@ -54,6 +54,7 @@
         .centro {
             text-align: center;
             align-items: center;
+            vertical-align: center;
         }
         .justificado {
             text-align: justify;
@@ -64,6 +65,14 @@
         .italico {
             font-style: italic;
         }
+        #msocial {
+/* 		    display: block;
+		    position: fixed;
+            align-content: center;
+            align-items: center;
+		    right: 5em; */
+        }
+
         /*Fontes redimensionáveis*/
             .fs4 { font-size: calc(4px + 0.4vw) }
             .fs5 { font-size: calc(5px + 0.5vw) }
@@ -119,7 +128,7 @@
 	}
 	#ico_cert {
         border:none;
-        vertical-align: middle;
+        vertical-align: center;
         width: 1.5em;
         height: 1em;
 	}
