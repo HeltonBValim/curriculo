@@ -65,13 +65,6 @@
         .italico {
             font-style: italic;
         }
-        #msocial {
-/* 		    display: block;
-		    position: fixed;
-            align-content: center;
-            align-items: center;
-		    right: 5em; */
-        }
 
         /*Fontes redimensionáveis*/
             .fs4 { font-size: calc(4px + 0.4vw) }
@@ -256,7 +249,7 @@
         .caixa {
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 15vh 30vh 55vh 20vh;
+            grid-template-rows: 15vh 20vh 55vh 14vh;
             gap: .2vh;
             grid-template-areas: "aside"
                                  "header"
@@ -267,6 +260,7 @@
             background-image: url(../files/imgs/cv_h.png);
         }
     }
+
     @media screen and (min-width:768px) and (max-width:1023px) {
         nav#menu {
             flex-direction: column;
@@ -274,7 +268,7 @@
         .caixa {
             display: grid;
             grid-template-columns: 100%;
-            grid-template-rows: 15vh 25vh 55vh 14vh;
+            grid-template-rows: 15vh 20vh 55vh 14vh;
             gap: .3vh;
             grid-template-areas: "aside"
                                  "header"
@@ -285,12 +279,14 @@
             background-image: url(../files/imgs/cv_h.png);
         }
     }
+
     @media screen and (min-width:1024px) {
         .caixa {
             display: grid;
             /* grid-template-columns: 1fr 5fr; */
             grid-template-columns: 15% 85%;
-            grid-template-rows: 29vh 50vh 14vh;
+/*             grid-template-rows: 29vh 50vh 14vh; */
+            grid-template-rows: 22vh 64vh 16vh;
             gap: .3vh;
             align-items: stretch;
             justify-items: stretch;
@@ -300,6 +296,13 @@
         }
         #imgfundo {
             background-image: url(../files/imgs/cv_v.png);
+        }
+        #msocial {
+		    display: block;
+		    position: fixed;
+            align-content: center;
+            align-items: center;
+		    right: 5em;
         }
     }
 /**/
