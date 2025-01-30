@@ -65,7 +65,12 @@
         .italico {
             font-style: italic;
         }
-
+        button {
+            padding: .1em;
+            border: 1em;
+            border-color: darkgreen;
+            vertical-align: middle;
+       }
         /*Fontes redimensionáveis*/
             .fs4 { font-size: calc(4px + 0.4vw) }
             .fs5 { font-size: calc(5px + 0.5vw) }
@@ -122,8 +127,8 @@
 	#ico_cert {
         border:none;
         vertical-align: center;
-        width: 1.5em;
-        height: 1em;
+        width: 2.5em;
+        height: 2em;
 	}
     #certv {
         display: block;
@@ -286,7 +291,7 @@
             /* grid-template-columns: 1fr 5fr; */
             grid-template-columns: 15% 85%;
 /*             grid-template-rows: 29vh 50vh 14vh; */
-            grid-template-rows: 22vh 64vh 16vh;
+            grid-template-rows: 22vh 59vh 16vh;
             gap: .3vh;
             align-items: stretch;
             justify-items: stretch;
@@ -299,7 +304,7 @@
         }
         #msocial {
 		    display: block;
-		    position: fixed;
+		    position: absolute;
             align-content: center;
             align-items: center;
 		    right: 5em;
